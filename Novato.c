@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 // Super Trunfo - Cartas de Cidades
+// Tema 2 : Novato
 // Cadastro das Cartas
 
 int main() {
-    printf(" **  SUPER TRUNFO CIDADES  **\n");
+    printf("**SUPER TRUNFO PAÍSES**\n");
     // Definir variáveis
     char nome_do_estado1[50], nome_do_estado2[50];
     char codigo_da_carta1[4], codigo_da_carta2[4];
@@ -80,16 +81,16 @@ int main() {
     printf("COMPARAÇÃO DE CARTAS\n");
     printf("Atributo: População\n");
 
-    printf("Carta 1 - %s (%s): %lu habitantes\n", nome_da_cidade1, nome_do_estado1, populacao1);
-    printf("Carta 2 - %s (%s): %lu habitantes\n", nome_da_cidade2, nome_do_estado2, populacao2);
+    printf("Carta 1 - %lu habitantes\n", populacao1);
+    printf("Carta 2 - %lu habitantes\n", populacao2);
 
     if (populacao1 > populacao2) {
-        printf("Resultado: Carta 1 (Cidade 1) venceu! \n");
+        printf("Resultado: Carta 1 venceu! \n");
     } else if (populacao1 < populacao2) {
-        printf("Resultado: Carta 2 (Cidade 2) venceu! \n");
-    } else {
-        printf("Resultado: Empate! Ambas as cidades possuem a mesma população. \n");
-    }
+        printf("Resultado: Carta 2 venceu! \n");
+    } 
 
     return 0;
+
+}
     //TODAS AS REFERENCIAS À CARTA 03 DO DESAFIO ANTERIOR FOI DESCONSIDERADA NESSA ETAPA.
